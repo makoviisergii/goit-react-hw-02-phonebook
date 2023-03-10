@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/makoviisergii.github.io/goit-react-hw-02-phonebook/static/css/main.7acaea2f.css",
+    "main.js": "/makoviisergii.github.io/goit-react-hw-02-phonebook/static/js/main.f6cdf716.js",
+    "index.html": "/makoviisergii.github.io/goit-react-hw-02-phonebook/index.html",
+    "main.7acaea2f.css.map": "/makoviisergii.github.io/goit-react-hw-02-phonebook/static/css/main.7acaea2f.css.map",
+    "main.f6cdf716.js.map": "/makoviisergii.github.io/goit-react-hw-02-phonebook/static/js/main.f6cdf716.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.7acaea2f.css",
+    "static/js/main.f6cdf716.js"
+  ]
+}
