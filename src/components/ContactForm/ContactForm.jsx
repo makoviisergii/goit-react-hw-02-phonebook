@@ -17,6 +17,13 @@ export class ContactForm extends Component {
     }));
   };
 
+  clearStste = () => {
+    this.setState(prevState => ({
+      name: '',
+      number: '',
+    }));
+  };
+
   isUserNameIncludesContacts = () => {
     return this.props.contacts.find(
       contact => contact.name.toLowerCase() === this.state.name.toLowerCase()
@@ -26,18 +33,19 @@ export class ContactForm extends Component {
   handleUserCreate = evt => {
     evt.preventDefault();
     this.getNewId();
-    console.log(this.state);
 
     if (this.isUserNameIncludesContacts() === undefined) {
       this.props.onUserCreate(this.state);
+      this.clearStste();
     } else {
       alert(`${this.state.name} is already in contacts!`);
+      this.clearStste();
     }
   };
 
   render() {
     return (
-      <ContactFormBox>
+      <ContactFormBox onSubmit={this.handleUserCreate}>
         <ContactLabel>
           Name
           <Contactinput
@@ -68,9 +76,7 @@ export class ContactForm extends Component {
             required
           />
         </ContactLabel>
-        <ContactButton onClick={this.handleUserCreate}>
-          Add contact
-        </ContactButton>
+        <ContactButton>Add contact</ContactButton>
       </ContactFormBox>
     );
   }
@@ -87,7 +93,7 @@ ContactForm.propTypes = {
   ),
 };
 
-const ContactFormBox = styled.div`
+const ContactFormBox = styled.form`
   width: 400px;
   padding: 20px;
   display: flex;
