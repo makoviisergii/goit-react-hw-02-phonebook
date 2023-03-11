@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import styled from 'styled-components';
 import { nanoid } from 'nanoid';
+import PropTypes from 'prop-types';
 
 export class ContactForm extends Component {
   state = {
@@ -74,6 +75,17 @@ export class ContactForm extends Component {
     );
   }
 }
+
+ContactForm.propTypes = {
+  handleCreateUser: PropTypes.func.isRequired,
+  contacts: PropTypes.arrayOf(
+    PropTypes.shape({
+      id: PropTypes.string,
+      name: PropTypes.string,
+      number: PropTypes.string,
+    }).isRequired
+  ),
+};
 
 const ContactFormBox = styled.div`
   width: 400px;

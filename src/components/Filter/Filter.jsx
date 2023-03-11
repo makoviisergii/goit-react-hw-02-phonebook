@@ -1,4 +1,5 @@
 import styled from 'styled-components';
+import PropTypes from 'prop-types';
 
 export const Filter = ({ searchStr, onChangeInput }) => {
   const handleChange = event => {
@@ -20,6 +21,10 @@ export const Filter = ({ searchStr, onChangeInput }) => {
   );
 };
 
+Filter.propTypes = {
+  earchStr: PropTypes.string.isRequired,
+  onChangeInput: PropTypes.func.isRequired,
+};
 const ContactLabel = styled.label`
   margin-left: 20px;
   display: flex;

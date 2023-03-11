@@ -1,5 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
+import PropTypes from 'prop-types';
 
 export const ContactItem = ({ contact, onDeleteUser }) => {
   const { id, name, number } = contact;
@@ -17,6 +18,17 @@ export const ContactItem = ({ contact, onDeleteUser }) => {
       </ContactButton>
     </ContactItemBox>
   );
+};
+
+ContactItem.propTypes = {
+  onDeleteUser: PropTypes.func.isRequired,
+  contacts: PropTypes.arrayOf(
+    PropTypes.shape({
+      id: PropTypes.string,
+      name: PropTypes.string,
+      number: PropTypes.string,
+    }).isRequired
+  ),
 };
 
 const ContactItemBox = styled.li`
