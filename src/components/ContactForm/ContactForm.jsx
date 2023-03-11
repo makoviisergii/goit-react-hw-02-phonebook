@@ -6,8 +6,8 @@ import PropTypes from 'prop-types';
 export class ContactForm extends Component {
   state = {
     id: nanoid(),
-    name: 'Test User',
-    number: '222-33-11',
+    name: '',
+    number: '',
   };
 
   getNewId = () => {
