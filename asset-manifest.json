@@ -1,13 +1,13 @@
 {
   "files": {
-    "main.css": "/makoviisergii.github.io/goit-react-hw-02-phonebook/static/css/main.7acaea2f.css",
-    "main.js": "/makoviisergii.github.io/goit-react-hw-02-phonebook/static/js/main.a5646b60.js",
-    "index.html": "/makoviisergii.github.io/goit-react-hw-02-phonebook/index.html",
-    "main.7acaea2f.css.map": "/makoviisergii.github.io/goit-react-hw-02-phonebook/static/css/main.7acaea2f.css.map",
-    "main.a5646b60.js.map": "/makoviisergii.github.io/goit-react-hw-02-phonebook/static/js/main.a5646b60.js.map"
+    "main.css": "/goitacademy.github.io/goit-react-hw-02-phonebook/static/css/main.7acaea2f.css",
+    "main.js": "/goitacademy.github.io/goit-react-hw-02-phonebook/static/js/main.36d4b2e1.js",
+    "index.html": "/goitacademy.github.io/goit-react-hw-02-phonebook/index.html",
+    "main.7acaea2f.css.map": "/goitacademy.github.io/goit-react-hw-02-phonebook/static/css/main.7acaea2f.css.map",
+    "main.36d4b2e1.js.map": "/goitacademy.github.io/goit-react-hw-02-phonebook/static/js/main.36d4b2e1.js.map"
   },
   "entrypoints": [
     "static/css/main.7acaea2f.css",
-    "static/js/main.a5646b60.js"
+    "static/js/main.36d4b2e1.js"
   ]
 }
